@@ -10,8 +10,8 @@ st.write("About me: This page contains information about me!")
 
 
 st.page_link("Home_Page.py", label="Home", icon="🏠")
-st.page_link("Pages/Portfolio.py", label="Portfolio", icon="1️⃣")
-st.page_link("Pages/Time Management Tracker.py", label="About Me", icon="2️⃣")
+st.page_link("/Pages/Portfolio.py", label="Portfolio", icon="1️⃣")
+st.page_link("/Pages/Time Management Tracker.py", label="About Me", icon="2️⃣")
 st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 
