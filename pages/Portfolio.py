@@ -4,7 +4,7 @@ import pandas as pd
 
 #about me
 def about_me_section():
-    st.header("About Me")
+    st.header("🚀About Me")
     st.image(info.profile_picture, width=200)
     st.write(info.about_me)
     st.write("---")
@@ -48,7 +48,7 @@ education_section(info.education_data, info.course_data)
 
 #Professional Experience
 def experience_section(experience_data):
-    st.header("Professional Experience")
+    st.header("💼Professional Experience")
     for job_title,(job_description,image) in experience_data.items():
         expander = st.expander(f"{job_title}")
         expander.image(image, width = 250)
@@ -59,7 +59,7 @@ experience_section(info.experience_data)
 
 #Projects
 def project_section(projects_data):
-    st.header("Projects")
+    st.header("🛠️Projects")
     for project_name, project_description in projects_data.items():
         expander = st.expander(f"{project_name}")
         expander.write(project_description)
@@ -68,7 +68,7 @@ project_section(info.projects_data)
                  
 #Skills
 def skills_section(programming_data, spoken_data):
-    st.header("Skills")
+    st.header("👩‍💻Skills")
     st.subheader("Programming Languages")
     for skill, percentage in programming_data.items():
         st.write(f"{skill}{info.programming_icons.get(skill, '')}")
@@ -83,7 +83,7 @@ skills_section(info.programming_data, info.spoken_data)
 #Activities
 
 def activities_section(leadership_data, activity_data):
-    st.header("Activities")
+    st.header("🧗‍♀️Activities")
     tab1, tab2 = st.tabs(["Leadership", "Community Service"])
     with tab1:
         st.subheader("Leadership")
